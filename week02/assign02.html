@@ -8,23 +8,40 @@
     <title>Adriana Sandoval's Home Page</title>
     <style>
         header {
-            background: url("../img/bones.jpg") no-repeat center center fixed;
-        }
-
+          background: url("./bones.jpg") no-repeat center center fixed;
+        }    
         nav {
-            background-color: rgba(182, 179, 156, 0.426);
-            margin: 0px;
-            width: 100%;
+          background-color: rgba(182, 179, 156, 0.426);
+          margin: 0px;
+          width: 100%;
+        }    
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color:rgba(182, 179, 156, 0.426);
+        }    
+        li {
+          float: left;
+        }   
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 5px 5px;
+          text-decoration: none;
         }
-
+        li a:hover {
+          background-color: rgba(77, 74, 55, 0.426);
+        }
+    
         #text {
-            background-color: rgba(255, 255, 255, 0.6);
-            margin: 0px;
-            width: 100%;
+          background-color: rgba(255, 255, 255, 0.6);
+          margin: 0px;
+          width: 100%;
         }
-    </style>
-
-
+      </style>
 </head>
 
 <body>
@@ -39,7 +56,9 @@
         </div>
 
         <nav>
-            <a href="../index.html">CS 213 Assignments</a>
+            <ul style="text-align: center; list-style-position: inside;">
+                <li><a href="../index.html">CS 213 Assignments</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -73,12 +92,13 @@
         </article>
     </div>
     <hr><br><br><br>
-    <table style="HEIGHT:50%; WIDTH:100%; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" border=8 align="center" cellspacing="3">
+    <table style="HEIGHT:50%; WIDTH:100%; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+        border=8 align="center" cellspacing="3">
 
         <caption style="font-size: 35px; color: #4f216e; "><b>SCHEDULE</b></caption>
         <tr style="font-size: 20px; color: #4f216e;">
             <th>CLASS NAME</th>
-            <th >CLASS CODE</th>
+            <th>CLASS CODE</th>
             <th>DESCRIPTION</th>
         </tr>
 
@@ -86,35 +106,39 @@
         <tr style="font-size: 20px;">
             <td>Web Engineering I</td>
             <td>CS 213</td>
-            <td>Internet and web basics, web fundamentals, web browsers, web servers, and web terminology. This course teaches the concepts behind the fundamentals tools used for building client-side web applications.</td>
+            <td>Internet and web basics, web fundamentals, web browsers, web servers, and web terminology. This course
+                teaches the concepts behind the fundamentals tools used for building client-side web applications.</td>
         </tr>
 
         <tr style="font-size: 20px;">
             <td>Software Design and Development</td>
             <td>CS 246</td>
             <td>Advanced object-oriented desings snd software development.</td>
-            
+
         </tr>
 
         <tr style="font-size: 20px;">
             <td>Web Fundamentals</td>
             <td>WDD 130</td>
-            <td>This course introduces students to the World Wide Web and to the careers in web side design and development </td>
-           
+            <td>This course introduces students to the World Wide Web and to the careers in web side design and
+                development </td>
+
         </tr>
 
         <tr style="font-size: 20px;">
             <td>Writing & Reasoning Foundations</td>
             <td>ENG 150</td>
-            <td>An introduction to academic inquiry and writing, laying the foundation for further academic and professional development.</td>
-    
+            <td>An introduction to academic inquiry and writing, laying the foundation for further academic and
+                professional development.</td>
+
         </tr>
 
         <tr style="font-size: 20px;">
             <td>The Eternal Family</td>
             <td>REL 200C</td>
-            <td>This course centers on The Family: A Proclamation to the world and develops gosppel doctrines and principles pertaining to a successful and happy marriage and family life.</td>
-           
+            <td>This course centers on The Family: A Proclamation to the world and develops gosppel doctrines and
+                principles pertaining to a successful and happy marriage and family life.</td>
+
         </tr>
     </table>
     <br><br><br>
