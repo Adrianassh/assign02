@@ -7,7 +7,7 @@
     margin: 0 auto; 
   } 
 
-header {
+#cabecero {
     color: rgb(201, 201, 216);
     box-align: center;
     text-align: center;
@@ -32,6 +32,7 @@ header {
     color: rgb(94, 14, 42);
     font-style: italic;
 }
+
 label {
     width: 40%;
     text-align: left;
@@ -146,8 +147,6 @@ hr {
     padding-bottom: 50px;
 }
 
-
-
 .trt {
     color: #573d21;
 }
@@ -175,7 +174,6 @@ hr {
     font-family:monospace;
     font-style: italic;
 }
-
 
 .img-articles {
     width: 800px;

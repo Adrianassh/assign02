@@ -5,9 +5,9 @@
 #content{
     max-width: 1500px;
     margin: 0 auto; 
-  } 
+} 
 
-header {
+#cabecero {
     color: rgb(201, 201, 216);
     box-align: center;
     text-align: center;
