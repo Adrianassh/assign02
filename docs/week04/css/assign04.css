@@ -36,16 +36,9 @@ header {
     color: #115626;
 }
 .img_web {
-    height: 300px;
-    width: 650px;
+    width: 95%;
     padding-left: 200px;
 }
-.img_software {
-    height: 300px;
-    width: 500px;
-    padding-left: 200px;
-}
-
 #paragraf2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
