@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background: url("../img/2.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.img-avatar-rounded {
+    margin-top: 10px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    float: left!important;
+}
+
+.contenedor {
+    background: rgb(255, 255, 255, 0.8);
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.navegador li {
+    padding: 10px;
+}
+
+.contenido {
+    height: 86%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+}
+
+.img-carrusel{
+    width: 100%;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.logo img {
+    margin: 2px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    float: left!important;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.colum{
+    padding:10px;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 950px) {
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contenido {
+        flex-flow: column;
+    }
+
+    #avatar{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {}
