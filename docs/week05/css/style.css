@@ -14,6 +14,10 @@ body {
     min-height: 100vh;
 }
 
+.img-contenido{
+    padding: 10px;
+}
+
 .img-avatar-rounded {
     margin-top: 10px;
     margin-right: 15px;
@@ -101,8 +105,14 @@ h1 {
     text-align: center;
 }
 
+.tittle{
+    text-align: center;
+    font-family: cursive;
+}
+
 .colum{
     padding:10px;
+    width: 33%;
 }
 
 .footer{
