@@ -135,6 +135,10 @@ h1 {
         flex-flow: column;
     }
 
+    .colum{
+        width: 100%;
+    }
+
     #avatar{
         display: none;
     }
