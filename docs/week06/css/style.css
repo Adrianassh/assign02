@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("../img/2.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.img-contenido {
+    padding: 10px;
+    width: 90%;
+    height: 50%;
+}
+
+.img-avatar-rounded {
+    margin-top: 10px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    float: left !important;
+}
+
+.contenedor {
+    background: rgb(255, 255, 255, 0.7);
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.navegador li {
+    padding: 10px;
+}
+
+.contenido {
+    height: 86%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.contenido2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.img-carrusel {
+    width: 100%;
+}
+
+.artesimg {
+    width: 100%;
+    height: auto;
+}
+
+.artesimg img {
+    width: 100%;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.logo img {
+    margin: 2px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    float: left !important;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.card-header {
+    background-color: rgb(245, 245, 233);
+    height: 30px;
+    font-size: small;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+    color: rgb(9, 49, 13);
+}
+
+.tittle {
+    text-align: left;
+}
+
+
+.colum {
+    padding: 10px;
+    width: 33%;
+}
+
+.colum2 {
+    padding: 10px;
+    width: 50%;
+}
+
+.colum3 {
+    width: 50%;
+    height: auto;
+    padding: 10%;
+}
+
+.imgColum {
+    height: auto;
+    width: 50%;
+}
+
+.colum4 {
+    width: 55%;
+    height: auto;
+    padding: 5px;
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.info1 {
+    /* This is the parent of the activity 1 boxes. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+
+}
+
+.contact {
+
+    width: 50%;
+}
+
+.imgc4 {
+    width: 100%;
+    height: auto;
+
+}
+
+.content4 {
+    /* This is the parent of the activity 4 boxes. */
+    display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: (250px, auto);
+    grid-column-gap: 10px;
+}
+
+.red4 {
+    background: rgba(202, 196, 196, 0.5);
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+
+.green4 {
+    grid-column: 2 / 5;
+    grid-row: 1;
+}
+
+.yellow4 {
+    grid-column: 2 / 6;
+    grid-row: 2;
+}
+
+.blue4 {
+    grid-column: 2 / 6;
+    grid-row: 3;
+}
+
+.articulo {
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+.articulo img {
+    width: 33%;
+    padding: 15px;
+
+}
+
+#tipoletra {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #283618;
+}
+
+#academic {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(41, 26, 41);
+    
+ }
+
+.finalimg {
+    width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .articulo {
+        flex-direction: column;
+    }
+
+    .articulo img {
+        width: 90%;
+        align-self: center;
+    }
+    .contenido {
+        flex-direction: column;
+    }
+
+    .colum2 {
+        width: 100%;
+    }
+
+    .colum {
+        width: 100%;
+    }
+
+    #avatar {
+        display: none;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .green4 {
+        grid-column: 2 / 5;
+        grid-row: 1;
+    }
+
+}
+
+@media screen and (max-width: 600px) {}
