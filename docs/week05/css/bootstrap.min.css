@@ -4480,7 +4480,7 @@ input[type=submit].btn-block {
     }
     .navbar-expand-sm .navbar-nav {
         -ms-flex-direction: row;
-        flex-direction: column
+        flex-direction: row
     }
     .navbar-expand-sm .navbar-nav .dropdown-menu {
         position: absolute
@@ -4522,7 +4522,7 @@ input[type=submit].btn-block {
     }
     .navbar-expand-md .navbar-nav {
         -ms-flex-direction: row;
-        flex-direction: column
+        flex-direction: row
     }
     .navbar-expand-md .navbar-nav .dropdown-menu {
         position: absolute
@@ -4563,7 +4563,7 @@ input[type=submit].btn-block {
         justify-content: flex-start
     }
     .navbar-expand-lg .navbar-nav {
-        -ms-flex-direction: column;
+        -ms-flex-direction: row;
         flex-direction: row
     }
     .navbar-expand-lg .navbar-nav .dropdown-menu {

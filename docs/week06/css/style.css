@@ -38,8 +38,8 @@ body {
 
 .contenedor {
     background: rgb(255, 255, 255, 0.7);
-    height: 100%;
-    max-width: 100%;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-flow: column;
 }
@@ -95,7 +95,6 @@ body {
 }
 
 .logo img {
-    margin: 2px;
     background-color: #fff;
     border: 1px solid #dee2e6;
     width: 40px;
@@ -114,7 +113,7 @@ body {
     font-size: 25px;
     font-family: sans-serif;
     margin-left: 10px;
-    padding: 5px;
+    margin: auto;
 }
 
 .card-header {
@@ -173,6 +172,7 @@ h2 {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+
 }
 
 .info1 {
