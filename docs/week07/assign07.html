@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-    <script src="./js/validate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <title>Mortgage</title>
@@ -58,7 +57,7 @@
                             <label for="apr">Loan Term:</label>
                         </div>
                         <div class="space-input">
-                            <input type="number" placeholder="Amount In Dollars" 
+                            <input type="number" id="amount" placeholder="Amount In Dollars" 
                             min="0" required>
                             <label for="amount">Loan Amount:</label>
                         </div>
@@ -68,36 +67,11 @@
                         </div>
                         <div class="space">
                             <button type="reset" class="btn btn-primary">Reset</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="btnSend" class="btn btn-primary">Calculate</button>
                         </div>
                     </form>
                 </div>
             </div>
-
-            <script>
-                $(document).ready(function () {
-                    $("#formulario").validate({
-                        rules: {
-                            apr: {
-                                required: true,
-                                min: 0,
-                                max: 25,
-                                rexp: "^[1-9]\d*(\.\d+)?$"
-                            },
-                            term: {
-                                required: true,
-                                min: 0,
-                                max: 40
-                            },
-                            amount: {
-                                required: true,
-                                min: 0,
-                                rexp: "^[1-9]\d*(\.\d+)?$"
-                            }
-                        }
-                    });
-                });
-            </script>
 
         </div>
 
@@ -109,6 +83,14 @@
                     style="color: #fff; margin-top: auto; margin-bottom: auto;">
                     Adriana Sandoval Salamanca</a>
             </div>
+            <script src="./js/calc.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#formulario").validate({
+                    });
+                });
+            </script>
+
 
         </div>
 

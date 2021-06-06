@@ -240,6 +240,11 @@ input.error {
     color: red;
 }
 
+input:valid {
+    border: 1px dashed green;
+    font-weight: 300;
+}
+
 
 @media screen and (max-width: 950px) {
     .logo {
