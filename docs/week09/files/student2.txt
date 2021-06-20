@@ -1,0 +1,7 @@
+{
+    "first_name": "Ainhoa",
+    "last_name": "Hernandez",
+    "address": "750s 650w Provo UT 84601",
+    "gpa": "8",
+    "major": "A+"
+}

@@ -1,0 +1,7 @@
+{
+    "first_name": "Adriana",
+    "last_name": "Sandoval",
+    "address": "750s 650w Provo UT 84601",
+    "gpa": "7.5",
+    "major": "A"
+}

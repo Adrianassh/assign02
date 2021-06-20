@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Ajax</title>
 </head>
+
 <body>
-    <form>
-        <input type="text" name="name" placeholder="This will be assignment #9">
-    </form>
+    <div class="header flex-row">
+        <div class="logo flex-row">
+            <img src="./img/logo_janus.png" alt="logo application">
+            <p>F&J Developers</p>
+        </div>
+        <nav class="navegador flex-row">
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../week02/assign02.html">Week 2</a></li>
+                <li><a href="../week03/assign03.html">Week 3</a></li>
+                <li><a href="../week04/assign04.html">Week 4</a></li>
+                <li><a href="../week05/assign05.html">Week 5</a></li>
+                <li><a href="../week06/assign06.html">Week 6</a></li>
+                <li><a href="../week07/assign07.html">Week 7</a></li>
+                <li><a href="../week08/assign08.html">Week 8</a></li>
+                <li><a class="active" href="#">Week 9</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <article class="articulo flex-column">
+        <h3>Country Section</h3>
+        <section class="seccion flex-row">
+            <form class="formulario" id="form1">
+                <div class="space-input flex-row">
+                    <select name="select" id="selection">
+                        <option value="0" selected>Colombia</option>
+                        <option value="1">United States</option>
+                        <option value="2">Mexico</option>
+                        <option value="3">Canada</option>
+                      </select>
+                      <label for="select">Country</label>
+                </div>
+                <br>
+                <div class="space-input">
+                    <label for="response">Response:</label>
+                    <br>
+                    <output id="response"></output>
+                </div>
+            </form>
+        </section>
+        <br>
+        <h3>Student Section</h3>
+        <section class="seccion flex-row">
+            <form class="formulario" id="form2">
+                <div class="space-input flex-row">
+                    <select name="student" id="stu">
+                        <option value="0" selected>Student 1</option>
+                        <option value="1">Student 2</option>
+                      </select>
+                      <label for="student">Student</label>
+                </div>
+                <br>
+                <div class="space-input">
+                    <label for="response2">Response:</label>
+                    <br>
+                    <output id="response2"></output>
+                </div>
+                <div class="space">
+                    <input class="btn" type="button" id="btnSend" value="Send"> 
+                </div>
+            </form>
+        </section>
+    </article>
+    <script src="./js/ajax_assign07.js"></script>
 </body>
+
 </html>

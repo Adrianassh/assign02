@@ -1,0 +1,10 @@
+Toronto	(2.503.281)
+Montreal	(1.620.693)
+Vancouver	(988.193)
+Ottawa	(947.031)
+Edmonton	(730.372
+Mississauga	(668.549)
+Winnipeg	(633.451)
+Calgary	(578.041)
+Quebec	(510.691)
+Hamilton	(504.559)
