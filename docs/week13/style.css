@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 100%;
+    background-color: #D0D3D4;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: #AC58FA
+}
+
+a:hover {
+    color: #CC2EFA;
+}
+
+a:active {
+    color: #DAF7A6;
+}
+
+.cabecero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner-box img {
+    width: 100%;
+}
+
+.content {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.navegador {
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.navegador ul {
+    list-style-type: none;
+}
+
+.navegador li {
+    float: left;
+    width: 8em;
+    padding: 10px;
+}
+
+.navegador li:hover {
+    background-color: #088A85;
+}
+
+.contenido2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.logo img {
+    margin: 2px;
+    margin-top: 4px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    float: left !important;
+}
+
+.logo p {
+    color: #5B2C6F;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;
+
+}
+
+.moveDown {
+    margin-top: 3em;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #e2ece9;
+    border: black 2.5px solid;
+
+}
+
+.sizeimg {
+    height: 50px;
+    width: 80px;
+
+}
+
