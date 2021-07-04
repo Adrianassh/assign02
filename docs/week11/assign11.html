@@ -1,14 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Shopping</title>
 </head>
+
 <body>
-    <form>
-        <input type="text" name="name" placeholder="This will be assignment #11">
-    </form>
+
+    <div class="contenedor">
+
+        <div class="header">
+
+            <nav class="navegador">
+                <div class="logo">
+                    <img src="./img/logo_janus.png" alt="logo">
+                    <p>F&J Developers</p>
+                </div>
+                <div class="fluid">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../week02/assign02.html">Week 2</a></li>
+                        <li><a href="../week03/assign03.html">Week 3</a></li>
+                        <li><a href="../week04/assign04.html">Week 4</a></li>
+                        <li><a href="../week05/assign05.html">Week 5</a></li>
+                        <li><a href="../week06/assign06.html">Week 6</a></li>
+                        <li><a href="../week07/assign07.html">Week 7</a></li>
+                        <li><a href="../week08/assign08.html">Week 8</a></li>
+                        <li><a href="../week09/assign09.html">Week 9</a></li>
+                        <li><a href="../week10/assign10.html">Week 10</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="contenido">
+            <div class="card tarjeta">
+                <div class="card-body">
+                    <h3>Shopping Calculator</h3>
+                    <form id="formulario" action="assign11.php" method="post">
+                        <div class="column-left">
+                            <div class="space-input">
+                                <input type="text" placeholder="Enter First Name" id="first_name" required
+                                    data-pattern-validate name="first_name">
+                                <label for="first_name">First Name:</label>
+                            </div>
+                            <div class="space-input">
+                                <input type="text" placeholder="Enter Last Name" id="last_name" required
+                                    data-pattern-validate name="last_name">
+                                <label for="last_name">Last Name:</label>
+                            </div>
+                            <div class="space-input">
+                                <input type="text" id="address" placeholder="Enter address" required
+                                    data-pattern-validate name="address">
+                                <label for="address">Address:</label>
+                            </div>
+                            <div class="space-input">
+                                <input type="tel" id="phone" placeholder="Enter phone" required
+                                    pattern="\d{3}[\s-]\d{3}[\s-]\d{4}$" data-pattern-validate name="phone">
+                                <label for="phone">Phone:</label>
+                            </div>
+
+                            <div class="space-input">
+                                <label>Credit Card:</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="card" id="card1">
+                                <label class="form-check-label" for="card1">
+                                    Visa
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="card" id="card2" checked>
+                                <label class="form-check-label" for="card2">
+                                    Mastercard
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="card" id="card3" checked>
+                                <label class="form-check-label" for="card3">
+                                    American Express
+                                </label>
+                            </div>
+                            <br>
+                            <div class="space-input">
+                                <input type="text" id="credit_card" placeholder="Enter Credit Card Number"
+                                    pattern="\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}$" required data-pattern-validate>
+                                <label for="address">Credit Card Number:</label>
+                            </div>
+
+                            <div class="space-input">
+                                <div class="exp-wrapper">
+                                    <input autocomplete="off" class="exp" id="month" max="12" min="1" pattern="[0-9]*"
+                                        inputmode="numerical" placeholder="MM" type="number" data-pattern-validate />
+                                    <input autocomplete="off" class="exp" id="year" min="2020" pattern="[0-9]*"
+                                        inputmode="numerical" placeholder="YY" type="number" data-pattern-validate />
+                                </div>
+                                <label for="address">Credit Card Expiration Date:</label>
+                            </div>
+
+                        </div>
+
+                        <div class="column-right">
+                            <h4>Products</h4>
+                            <div class="space">
+                                <label for="item_0">Salt <span>($1.3)</span>:</label>
+                                <input type="number" id="item_0" pattern="\d+" value="0" name="item_0">
+                            </div>
+                            <div class="space">
+                                <label for="item_1">Meat <span>($1.7)</span>:</label>
+                                <input type="number" id="item_1" pattern="\d+" value="0" name="item_1">
+                            </div>
+                            <div class="space">
+                                <label for="item_2">Milk <span>($2.4)</span>:</label>
+                                <input type="number" id="item_2" pattern="\d+" value="0" name="item_2">
+                            </div>
+                            <div class="space">
+                                <label for="item_3">Fish <span>($3.5)</span>:</label>
+                                <input type="number" id="item_3" pattern="\d+" value="0" name="item_3">
+                            </div>
+                            <div class="space">
+                                <label for="payment">Total:</label>
+                                <output id="payment" name="payment"></output>
+                            </div>
+                        </div>
+                        <div class="space-bootom">
+                            <button type="reset" class="btn1">Reset</button>
+                            <button type="submit" id="btnSend" class="btn1" value="Calculate">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div style="margin-top: auto; margin-bottom: auto; margin-left: 13px;">
+                <img class="img-avatar-rounded" src="./img/avatar.jpg" alt="Adri">
+                <a class="navbar-brand me-auto mb-2 mb-lg-0" href="#"
+                    style="color: #fff; margin-top: auto; margin-bottom: auto;">
+                    Adriana Sandoval Salamanca</a>
+            </div>
+            <script src="./js/total.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#formulario").validate({
+                    });
+                });
+            </script>
+
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
