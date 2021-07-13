@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <title>Mileage Calculator</title>
 </head>
+
 <body>
-    <form>
-        <input type="text" name="name" placeholder="This will be assignment #12">
-    </form>
+    <div class="contenedor">
+
+        <div class="header">
+
+            <nav class="navegador">
+                <div class="logo">
+                    <img src="./img/logo_janus.png" alt="logo">
+                    <p>F&J Developers</p>
+                </div>
+                <div class="fluid">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../week02/assign02.html">Week 2</a></li>
+                        <li><a href="../week03/assign03.html">Week 3</a></li>
+                        <li><a href="../week04/assign04.html">Week 4</a></li>
+                        <li><a href="../week05/assign05.html">Week 5</a></li>
+                        <li><a href="../week06/assign06.html">Week 6</a></li>
+                        <li><a href="../week07/assign07.html">Week 7</a></li>
+                        <li><a href="../week08/assign08.html">Week 8</a></li>
+                        <li><a href="../week09/assign09.html">Week 9</a></li>
+                        <li><a href="../week10/assign10.html">Week 10</a></li>
+                        <li><a href="../week11/assign11.html">Week 11</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="contenido">
+            <div class="card tarjeta">
+                <div class="card-body">
+                    <form id="formulario" action="assing12.php" method="POST">
+                        <div class="column-left">
+                            <div class="space-input">
+                                <input name="startCity" type="text" id="startCity" required data-pattern-validate>
+                                <label for="startCity">Start City:</label>
+                            </div>
+                            <div class="space-input">
+                                <input name="startState" type="text" id="startState" required data-pattern-validate>
+                                <label for="startState">Start State:</label>
+                            </div>
+                            <div class="space-input">
+                                <input name="endCity" type="text" id="endCity" required data-pattern-validate>
+                                <label for="endCity">End City:</label>
+                            </div>
+                            <div class="space-input">
+                                <input name="endState" type="text" id="endState" required data-pattern-validate>
+                                <label for="endState">End State:</label>
+                            </div>
+                            <div class="space-bootom">
+                                <button type="reset" class="btn1">Reset</button>
+                                <button type="submit" id="btnSend" class="btn1" value="Calculate">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+            <div style="margin-top: auto; margin-bottom: auto; margin-left: 13px;">
+                <img class="img-avatar-rounded" src="./img/avatar.jpg" alt="Adri">
+                <a class="navbar-brand me-auto mb-2 mb-lg-0" href="#"
+                    style="color: #fff; margin-top: auto; margin-bottom: auto;">
+                    Adriana Sandoval Salamanca</a>
+            </div>
+            <script src="./ajax.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#formulario").validate({
+                    });
+                });
+            </script>
+
+
+        </div>
+
+    </div>
 </body>
+
 </html>
