@@ -1,105 +1,130 @@
-
 <!DOCTYPE html>
-<html lang="en-es">
+<html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
-    <title>Forms</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Festival</title>
 </head>
 
 <body>
-    <div id="content">
-        <header class="header">
-            <nav class="cabecero">
+
+    <div class="contenedor">
+
+        <div class="header">
+
+            <nav class="navegador">
                 <div class="logo">
-                    <img src="https://cdn.glitch.com/7f207903-33bf-40e5-ba6f-bed51a124e3b%2Flogo_janus.png?v=1622515905521"
-                        alt="logo">
-                    <p><br>F&J Developers</p>
+                    <img src="./img/logo_janus.png" alt="logo">
+                    <p>F&J Developers</p>
                 </div>
-                <div>
-                    <ul class="navegador">
-                        <li><a href="site-plan.html">Home</a></li>
-                        <li><a href="forms.html">Forms</a></li>
-                        <li><a href="contacs.html">Contacts</a></li>
+                <div class="fluid">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../week02/assign02.html">Week 2</a></li>
+                        <li><a href="../week03/assign03.html">Week 3</a></li>
+                        <li><a href="../week04/assign04.html">Week 4</a></li>
+                        <li><a href="../week05/assign05.html">Week 5</a></li>
+                        <li><a href="../week06/assign06.html">Week 6</a></li>
+                        <li><a href="../week07/assign07.html">Week 7</a></li>
+                        <li><a href="../week08/assign08.html">Week 8</a></li>
+                        <li><a href="../week09/assign09.html">Week 9</a></li>
+                        <li><a href="../week10/assign10.html">Week 10</a></li>
+                        <li><a href="../week11/assign11.html">Week 11</a></li>
+                        <li><a href="../week12/assign12.html">Week 12</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="banner-box">
-                <img src="https://cdn.glitch.com/1022b9f4-26f1-4424-8326-3c609841b3ba%2Famazonas1.jpg?v=1622780631861"
-                    alt="amazonas">
-            </div>
-        </header>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellendus veniam, distinctio
-            dolorem excepturi dolor! Accusantium, libero? Dolorum aliquam distinctio numquam, expedita tenetur rem
-            error alias, voluptatum consequatur ad repellendus.Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Explicabo repellendus veniam, distinctio dolorem excepturi dolor! Accusantium, libero? Dolorum
-            aliquam distinctio numquam, expedita tenetur rem error alias, voluptatum consequatur ad
-            repellendus.<br><br>
-        </p>
-        <div id="feedback"></div>
-        <form action="">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="fname">E-mail:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <input type="submit" value="Submit">
-        </form>
-        
+        </div>
 
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function (e) {
-                // stop the form from doing the default action
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
+        <div class="contenido">
+            <div class="card tarjeta">
+                <div class="card-body">
+                    <h3>Festival Competition</h3>
+                    <form id="formulario" action="assign11.php" method="post">
+                        <div class="column-left">
+                            <div class="space-input flex-row">
+                                <select name="select" id="selection">
+                                    <option value="0" selected>Solo</option>
+                                    <option value="1">Duet</option>
+                                    <option value="2">concerto</option>
+                                </select>
+                                <label for="select">Performance</label>
+                            </div>
+                            <div class="space-input">
+                                <input type="text" placeholder="Enter First Name" id="first_name" required
+                                    data-pattern-validate name="first_name">
+                                <label for="first_name">first_name:</label>
+                            </div>
+                            <div class="space-input">
+                                <input type="text" placeholder="Enter Last Name" id="last_name" required
+                                    data-pattern-validate name="last_name">
+                                <label for="last_name">last_name:</label>
+                            </div>
+                            <div class="space-input">
+                                <input type="text" id="address" placeholder="Enter address" required
+                                    data-pattern-validate name="address">
+                                <label for="address">student_id:</label>
+                            </div>
 
-        <div>
-            <footer>
-                <div class="footer">
-                    <div>
-                        <p>© 2021 Dry Oar - - WDD 130 Adriana Sandoval Salamanca</p>
-                        <p>
-                        <ul class="navegador">
-                            <li><a href="site-plan.html">Home</a></li>
-                            <li><a href="forms.html">Forms</a></li>
-                            <li><a href="contacs.html">Contacts</a></li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="sizeimg"
-                                src="http://1000marcas.net/wp-content/uploads/2019/11/WhatsApp-logo.png"
-                                alt="WhatsApp"></a>
-                        <a href="https://telegram.org/" target="_blank"><img class="sizeimg"
-                                src="https://1000marcas.net/wp-content/uploads/2019/12/Telegram-logo.png"
-                                alt="WhatsApp"></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.snapchat.android&hl=es_CO&gl=US"
-                            target="_blank"><img class="sizeimg"
-                                src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo=s180-rw"
-                                alt="link"></a>
-                    </div>
+                        </div>
+                        <div class="space-input flex-row">
+                            <select name="select" id="selection">
+                                <option value="0" selected>Beginner</option>
+                                <option value="1">Intermediate</option>
+                                <option value="2">Pre-advanced</option>
+                                <option value="2">Advanced</option>
+                            </select>
+                            <label for="select">Skill Levels</label>
+                        </div>
+
+                        <div class="space-input flex-row">
+                            <select name="select" id="selection">
+                                <option value="0" selected>Piano</option>
+                                <option value="1">Voice</option>
+                                <option value="2">String</option>
+                                <option value="2">Organ</option>
+                                <option value="2">other</option>
+                            </select>
+                            <label for="select">Instrument</label>
+                        </div>
+
+                        <div class="space-bootom">
+                            <button type="reset" class="btn1">Clear Form</button>
+                            <button type="submit" id="btnSend" class="btn1" value="Calculate">Register Student</button>
+                        </div>
+                    </form>
                 </div>
-            </footer>
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div style="margin-top: auto; margin-bottom: auto; margin-left: 13px;">
+                <img class="img-avatar-rounded" src="./img/avatar.jpg" alt="Adri">
+                <a class="navbar-brand me-auto mb-2 mb-lg-0" href="#"
+                    style="color: #fff; margin-top: auto; margin-bottom: auto;">
+                    Adriana Sandoval Salamanca</a>
+            </div>
+            <script src="./js/total.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#formulario").validate({
+                    });
+                });
+            </script>
+
+
         </div>
 
     </div>
+
 </body>
 
 </html>
